@@ -1,0 +1,14 @@
+<resources>
+    <!-- Dark mode: ungu malam + amber tetap -->
+    <color name="brand_primary">#8B5CF6</color>
+    <color name="brand_primary_dark">#5B21B6</color>
+    <color name="brand_accent">#FBBF24</color>
+    <color name="brand_accent_dark">#F59E0B</color>
+    <color name="ink">#F4F2FF</color>
+    <color name="paper">#14111F</color>
+    <color name="card">#1E1A30</color>
+    <color name="muted">#A7A3C4</color>
+    <color name="success">#4ADE80</color>
+    <color name="danger">#F87171</color>
+    <color name="line">#2E2950</color>
+</resources>

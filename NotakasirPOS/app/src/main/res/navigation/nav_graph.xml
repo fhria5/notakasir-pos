@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cashierFragment">
+
+    <fragment android:id="@+id/onboardingFragment" android:name="id.notakasir.pos.ui.onboarding.OnboardingFragment" android:label="Setup Toko">
+        <action android:id="@+id/to_pin" app:destination="@id/pinFragment" app:popUpTo="@id/onboardingFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:id="@+id/pinFragment" android:name="id.notakasir.pos.ui.lock.PinLockFragment" android:label="PIN">
+        <action android:id="@+id/to_cashier" app:destination="@id/cashierFragment" app:popUpTo="@id/pinFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:id="@+id/cashierFragment" android:name="id.notakasir.pos.ui.cashier.CashierFragment" android:label="Kasir">
+        <action android:id="@+id/to_payment" app:destination="@id/paymentFragment" />
+        <action android:id="@+id/to_tables" app:destination="@id/tablesFragment" />
+    </fragment>
+    <fragment android:id="@+id/paymentFragment" android:name="id.notakasir.pos.ui.payment.PaymentFragment" android:label="Bayar">
+        <action android:id="@+id/to_receipt" app:destination="@id/receiptFragment" app:popUpTo="@id/cashierFragment" app:popUpToInclusive="false" />
+    </fragment>
+    <fragment android:id="@+id/receiptFragment" android:name="id.notakasir.pos.ui.receipt.ReceiptFragment" android:label="Struk">
+        <action android:id="@+id/to_cashier_home" app:destination="@id/cashierFragment" app:popUpTo="@id/cashierFragment" app:popUpToInclusive="false" />
+    </fragment>
+    <fragment android:id="@+id/tablesFragment" android:name="id.notakasir.pos.ui.tables.TablesFragment" android:label="Meja" />
+    <fragment android:id="@+id/productsFragment" android:name="id.notakasir.pos.ui.products.ProductsFragment" android:label="Produk" />
+    <fragment android:id="@+id/productFormFragment" android:name="id.notakasir.pos.ui.products.ProductFormFragment" android:label="Form Produk" />
+    <fragment android:id="@+id/reportsFragment" android:name="id.notakasir.pos.ui.reports.ReportsFragment" android:label="Laporan" />
+    <fragment android:id="@+id/analyticsFragment" android:name="id.notakasir.pos.ui.analytics.AnalyticsFragment" android:label="Analitik" />
+    <fragment android:id="@+id/shiftFragment" android:name="id.notakasir.pos.ui.shift.ShiftFragment" android:label="Shift &amp; Kas" />
+    <fragment android:id="@+id/usersFragment" android:name="id.notakasir.pos.ui.users.UsersFragment" android:label="Pengguna" />
+    <fragment android:id="@+id/customersFragment" android:name="id.notakasir.pos.ui.customers.CustomersFragment" android:label="Pelanggan" />
+    <fragment android:id="@+id/settingsFragment" android:name="id.notakasir.pos.ui.settings.SettingsFragment" android:label="Pengaturan" />
+</navigation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="16dp">
+
+    <TextView style="@style/Text.Notakasir.Headline" android:text="Kasir"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView style="@style/Text.Notakasir.Muted" android:id="@+id/tv_store"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+        <EditText android:id="@+id/et_search" android:hint="Cari / scan barcode…"
+            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+            android:inputType="text" android:background="@drawable/ic_logo" />
+        <Button android:id="@+id/btn_scan" android:text="Scan"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_category"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:orientation="horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_product"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:layout_marginTop="8dp" android:clipToPadding="false" />
+
+    <LinearLayout android:id="@+id/empty_state" android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:visibility="gone" android:layout_marginTop="24dp">
+        <ImageView android:src="@drawable/img_empty"
+            android:layout_width="120dp" android:layout_height="120dp" />
+        <TextView android:text="Belum ada produk. Tambah di menu Produk."
+            style="@style/Text.Notakasir.Muted"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="12dp">
+            <TextView android:id="@+id/tv_totals" style="@style/Text.Notakasir.Body"
+                android:text="Subtotal Rp0 • Total Rp0"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <Button android:id="@+id/btn_tables" android:text="Meja"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <Space android:layout_width="8dp" android:layout_height="1dp" />
+                <Button android:id="@+id/btn_pay" android:text="Bayar"
+                    android:layout_width="0dp" android:layout_weight="2"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

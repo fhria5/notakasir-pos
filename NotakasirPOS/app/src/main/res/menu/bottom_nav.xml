@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/cashierFragment" android:title="Kasir" android:icon="@drawable/ic_logo" />
+    <item android:id="@+id/tablesFragment" android:title="Meja" android:icon="@drawable/ic_logo" />
+    <item android:id="@+id/productsFragment" android:title="Produk" android:icon="@drawable/ic_logo" />
+    <item android:id="@+id/reportsFragment" android:title="Laporan" android:icon="@drawable/ic_logo" />
+    <item android:id="@+id/settingsFragment" android:title="Atur" android:icon="@drawable/ic_logo" />
+</menu>

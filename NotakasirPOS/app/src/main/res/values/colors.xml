@@ -1,0 +1,14 @@
+<resources>
+    <!-- Brand Notakasir: Ungu Tinta (#5B21B6) + Amber Kunyit (#F59E0B). Bukan hijau-putih generik. -->
+    <color name="brand_primary">#5B21B6</color>
+    <color name="brand_primary_dark">#3B1470</color>
+    <color name="brand_accent">#F59E0B</color>
+    <color name="brand_accent_dark">#B45309</color>
+    <color name="ink">#1E1B2E</color>
+    <color name="paper">#FAF7FF</color>
+    <color name="card">#FFFFFF</color>
+    <color name="muted">#6D6A85</color>
+    <color name="success">#15803D</color>
+    <color name="danger">#DC2626</color>
+    <color name="line">#E6E1F5</color>
+</resources>

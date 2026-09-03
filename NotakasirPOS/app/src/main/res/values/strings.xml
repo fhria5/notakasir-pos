@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notakasir POS</string>
+    <string name="tagline">Kasir kilat untuk warung &amp; kafe</string>
+    <!-- Alasan permission (tampilkan juga di README) -->
+    <string name="perm_camera_rationale">Kamera dipakai untuk scan barcode produk di layar Kasir.</string>
+    <string name="perm_bt_rationale">Bluetooth dipakai untuk cetak struk &amp; tiket dapur ke printer thermal.</string>
+    <string name="perm_storage_rationale">Penyimpanan dipakai untuk backup/restore database ke file .db.</string>
+</resources>
